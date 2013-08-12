@@ -52,6 +52,10 @@ default:
 * ``output_path`` - the directory where store `.jmx` files
 * ``access_log`` - path to the server access log
 
+## JMeter
+
+There is a script `tests\jmeter_generator.php` it generates jmeter testplan that reads all access logs.
+
 ## Copyright
 
 Copyright (c) 2013 Gordon Franke (blog.gimler.de). See LICENSE for details.
