@@ -1,6 +1,6 @@
 <?php
 
-namespace Behat\LogExtension\Listener;
+namespace Gimler\Behat\LogExtension\Listener;
 
 use Behat\Behat\Event\FeatureEvent;
 use Behat\Mink\Mink;

@@ -1,6 +1,56 @@
 # LogExtension
 
-Provides a simple listener to copy to access logs from the server splitted for each feature.
+Provides a simple listener to grab the server access logs splitted for each feature.
+
+## Installation
+
+This extension requires:
+
+* Behat 2.4+
+* Mink 1.4+
+* Mink extension
+
+### Through Composer
+
+The easiest way to keep your suite updated is to use
+`Composer <http://getcomposer.org>`_.
+
+You can add log extension as dependancies for your project.
+
+#### Project dependancy
+
+1. Define dependencies in your ``composer.json``:
+
+```js
+
+{
+  "require": {
+    ...
+    "gimler/log-extension": "*"
+  }
+}
+```
+
+2. Install/update your vendors:
+
+```bash
+$ curl http://getcomposer.org/installer | php
+$ php composer.phar install
+```
+3. Activate extension by specifying its class in your ``behat.yml``:
+
+```yaml
+# behat.yml
+default:
+  # ...
+  extensions:
+    Gimler\Behat\LogExtension\Extension: ~
+```
+
+## Configuration
+
+* ``output_path`` - the directory where store `.jmx` files
+* ``access_log`` - path to the server access log
 
 ## Copyright
 

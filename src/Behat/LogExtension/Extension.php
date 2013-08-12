@@ -1,6 +1,6 @@
 <?php
 
-namespace Behat\LogExtension;
+namespace Gimler\Behat\LogExtension;
 
 use Symfony\Component\Config\FileLocator,
     Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition,
