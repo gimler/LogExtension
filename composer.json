@@ -18,6 +18,6 @@
     },
 
     "autoload": {
-        "psr-0": { "Behat\\LogExtension": "src/" }
+        "psr-0": { "Gimler\\Behat\\LogExtension": "src/" }
     }
 }
