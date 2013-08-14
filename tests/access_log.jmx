@@ -31,7 +31,7 @@
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="domain">${__P(hostname, localhost)}</stringProp>
-          <boolProp name="imageParsing">false</boolProp>
+          <boolProp name="imageParsing">true</boolProp>
           <stringProp name="logFile"></stringProp>
           <stringProp name="parserClassName">org.apache.jmeter.protocol.http.util.accesslog.TCLogParser</stringProp>
           <stringProp name="portString"></stringProp>
