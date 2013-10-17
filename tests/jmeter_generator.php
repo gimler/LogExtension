@@ -10,7 +10,7 @@
  if (!isset($argv[1])) {
     die('You must provide a log path argument.' . PHP_EOL);
  }
- $logPath = $argv[1];
+ $logPath = realpath($argv[1]);
  if (!is_dir($logPath)) {
     die(sprintf('Log path %s argument is not a directory.', $logPath) . PHP_EOL);
  }
@@ -18,7 +18,7 @@
  if (!isset($argv[2])) {
     die('You must provide a output file path argument.' . PHP_EOL);
  }
- $outputPath = $argv[2];
+ $outputPath = realpath($argv[2]);
  if (file_exists($outputPath)) {
      if (!is_writeable($outputPath)) {
         die(sprintf('Output file path %s argument is not writeable.', $outputPath) . PHP_EOL);
@@ -30,7 +30,7 @@
 if (!isset($argv[3])) {
     $template = __DIR__ . '/access_log.jmx';
 } else {
-    $template = $argv[3];
+    $template = realpath($argv[3]);
     if (!is_readable($template)) {
         die(sprintf('Template file %s is not readable.', $template) . PHP_EOL);
     }
