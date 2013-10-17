@@ -2,6 +2,8 @@
 
 Provides a simple listener to grab the server access logs splitted for each feature.
 
+[![Dependency Status](https://www.versioneye.com/user/projects/525fcb18632bac286400007d/badge.png)](https://www.versioneye.com/user/projects/525fcb18632bac286400007d)
+
 ## Installation
 
 This extension requires:
