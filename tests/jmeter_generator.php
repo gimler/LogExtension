@@ -18,7 +18,7 @@
  if (!isset($argv[2])) {
     die('You must provide a output file path argument.' . PHP_EOL);
  }
- $outputPath = realpath($argv[2]);
+ $outputPath = $argv[2];
  if (file_exists($outputPath)) {
      if (!is_writeable($outputPath)) {
         die(sprintf('Output file path %s argument is not writeable.', $outputPath) . PHP_EOL);
